@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+}
+.hero{
+    width:100%;
+    height: 100vh;
+    background-image: url(https://c.pxhere.com/photos/51/40/photo-45997.jpg!d);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.h1{
+    position: absolute;
+    top: 10%;
+    left:10%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    -webkit-text-stroke: 3px  rgb(137, 167, 135);
+    color:transparent;
+    background-image: linear-gradient(rgb(138, 184, 139),rgb(5, 89, 16));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -500px 0;
+    animation: backcolor 4s linear infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0 ;
+    }
+}
+button{
+    color: #abc59e;
+    margin-top: 75px;
+    margin-left:1350px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 4px solid rgb(171, 193, 170);
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+.content{
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-text-stroke: 3px  rgb(137, 167, 135);
+    color:transparent;
+    background-image: linear-gradient(rgb(138, 184, 139),rgb(5, 89, 16));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -700px 0;
+    animation: backcolor 4s linear infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0 ;
+    }
+}
+}
+.h2{
+    font-size: 60px;
+}
+h1{
+    font-size: 80px;
+
+}
+.bub{
+    width: 60px;
+    height: 60px;
+    box-shadow: inset 1px -1px white;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.01);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 0;
+   /* animation: bubble 3s ease-in infinite;*/
+
+}
+.bub::before{
+    position:absolute;
+    content: "";
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top:15px;
+    left:13px;
+    box-shadow: 0px 0px 10px white;
+
+}
+.bub.a{
+    left:0%;
+    animation: bubble 3s ease-in 1s infinite;
+}
+.bub.b{
+    left:20%;
+    animation: bubble2 5s ease-in 1.4s infinite;
+}
+.bub.c{
+    left:60%;
+    animation: bubble 5s ease-in 3.8s infinite;
+}
+.bub.d{
+    left:65%;
+    animation: bubble2 4s ease-in 0.5s infinite;
+}
+.bub.e{
+    left:46%;
+    animation: bubble 5.2s ease-in 2.5s infinite;
+}
+.bub.f{
+    left:55%;
+    animation: bubble2 3.5s ease-in 3s infinite;
+}
+.bub.f{
+    left:5%;
+    animation: bubble 4.3s ease-in 2s infinite;
+}
+.bub.g{
+    left:86%;
+    animation: bubble 3.5s ease-in 2s infinite;
+}
+.bub.h{
+    left:10%;
+    animation: bubble 4.7s ease-in 2.1s infinite;
+}
+.bub.i{
+    left:80%;
+    animation: bubble 4.1s ease-in 1.5s infinite;
+}
+.bub.j{
+    left:95%;
+    animation: bubble2 3.2s ease-in 1.3s infinite;
+}
+.bub.k{
+    left:35%;
+    animation: bubble 2.9s ease-in 3s  infinite;
+}
+@keyframes bubble2{
+    0%{
+        opacity: 0;
+    }
+    10%,93%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(90px,-700px);
+        display: none;
+    }
+}
+@keyframes bubble{
+    0%{
+        opacity: 0;
+    }
+    10%,93%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(90px,-700px);
+        display: none;
+    }
+}
